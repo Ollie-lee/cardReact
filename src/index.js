@@ -4,10 +4,21 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+function StudentCard(props) {
+  return (
+    <div>
+      <h1>{props.name}</h1>
+      <div>Age: {props.age}</div>
+    </div>
+  );
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <StudentCard name="jane" age={15}/>
+    <StudentCard name="tom" age={6}/>
+    <StudentCard name="jerry" age={1}/>
+  </div>,
   document.getElementById('root')
 );
 
