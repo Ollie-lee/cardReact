@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.card{
+  border-radius: 10px;
+  border: 1px solid #282c34;
+  display: inline-block;
+}
+
+
