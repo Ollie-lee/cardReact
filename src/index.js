@@ -10,7 +10,7 @@ function Card(props) {
       {/* <h1>{props.name}</h1>
       <div>Age: {props.age}</div> */}
       <h6>Editors' Picks</h6>
-      <img className="card-img" src="{props.img}" alt="gift description"></img>
+      <img className="card-img" src={require(`${props.img}`)} alt="gift description"></img>
       <h6>{props.title}</h6>
       <p>{props.subTitle}</p>
     </div>
@@ -22,7 +22,7 @@ ReactDOM.render(
     {/* <Card name="jane" age={15}/>
     <Card name="tom" age={6}/>
     <Card name="jerry" age={1}/> */}
-    <Card img="cardImg.jpg" title="Gifts for him" subTitle="For Valentine's Day"/>
+    <Card img="./cardImg.jpg" title="Gifts for him" subTitle="For Valentine's Day"/>
   </div>,
   document.getElementById('root')
 );
